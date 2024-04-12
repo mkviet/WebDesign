@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.top{
+    background-color:#cacaca;
+    position: fixed;
+    top: 0;
+    margin-bottom: 0;
+    height: 60px;
+}
+
+.top .logo{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.top img{
+    width: 200px;
+    height: 35px;
+    margin-right: 50px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.top li{
+    list-style: none;
+    display: inline;
+    padding-left: 15px;
+}
+
+
+.top li a{
+    
+    text-decoration: none; 
+    color: rgb(0, 0, 0);
+    margin-right: 25px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+.top li a:hover{
+    text-decoration: underline;
+}
+
+.top li input{
+    width: 260px;
+    height: 30px;
+    border-radius: 30px;
+    padding-left: 10px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.top li button{
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color:rgb(255, 255, 255) ;
+}
+
+.login > a >i.fa-solid{
+    width: 20px; 
+    margin-top: 10px;
+} 
+
+.login{
+    font-size: 25px;
+}
+
+.login > a{
+    padding-left: 10px;
+    
+}
+
+.cart > a >i.fa-solid{
+    width: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+} 
+
+.cart > a{
+    padding-left: 5px;
+}
+.cart{
+    font-size: 25px;
+}
+
+.map > a >I.fa-solid{
+    width: 20PX;
+    margin-top: 5px;
+}
+
+.map a {
+    font-size: 20px;
+}
+
+.menulist{
+    background-color:#cacaca;
+    width: 120px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    visibility: hidden;
+    position: absolute;
+    padding-left: 15px;
+    transition: 0.3s;
+    font-weight: bold;
+    margin-left: 550px;
+    top: 100%;
+    line-height: 40px;
+    text-align: center;
+}
+
+.fa-solid{
+    width: 10px;
+}
+
+.lists:hover .menulist{
+    visibility: visible;
+}
+
+.fa-solid .fa-caret-down{
+    width: 20px;
+}
+
+#cart-table {
+    width: 30%;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c6c6c6;
+    border: 1px solid #ccc;
+    padding: 30px;
+    z-index: 999;
+    transition: opacity 0.3s ease;
+    border: 1px solid black;
+}
+
+#cart-table.show {
+    display: block;
+    opacity: 1;
+}
+
+#cart-table {
+    width: 50%;
+    border-collapse: collapse;
+    height: auto;
+}
+
+.black-icon {
+    color: black;
+}
+
+.black-icon:hover{
+    color: red;
+}
+  
+#cart-table th,
+#cart-table td {
+    padding: 12px;
+    /* text-align: left; */
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding-left: 60px;
+}
+  
+#cart-table {
+    max-height: 300px; /* Đặt chiều cao tối đa cho bảng */
+    overflow-y: scroll; /* Kích hoạt cuộn dọc */
+}
+
+#cart-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+  
+#cart-table tfoot td {
+    padding-left: 0;
+    font-weight: bold;
+    padding-left: 10px;
+}
+  
+#total-price {
+    background-color: #bbbbbb;
+    width: 100%;
+}
+#pay-button {
+    background-color: #a3ec8f; /* Màu nền */
+    color: rgb(0, 0, 0); /* Màu chữ */
+    padding: 10px 30px; /* Kích thước padding */
+    font-size: 16px; /* Cỡ chữ */
+    border: none; /* Không có đường viền */
+    cursor: pointer; /* Hiển thị con trỏ khi rê chuột vào nút */
+    border-radius: 4px; /* Bo góc cho nút */
+    font-weight: bold;
+}
+
+#cart-table button {
+    margin-left: 15px;
+}
+  
+#pay-button:hover {
+    background-color: #5ff066; /* Màu nền khi rê chuột vào */
+}
+  
+#pay-button:active {
+    background-color: #3e8e41; /* Màu nền khi nút được nhấn */
+}
+
+#back-button {
+    background-color: #f69191; /* Màu nền */
+    color: rgb(0, 0, 0); /* Màu chữ */
+    padding: 10px 10px; /* Kích thước padding */
+    font-size: 16px; /* Cỡ chữ */
+    border: none; /* Không có đường viền */
+    cursor: pointer; /* Hiển thị con trỏ khi rê chuột vào nút */
+    border-radius: 4px; /* Bo góc cho nút */
+    font-weight: bold;
+}
+
+
+#cart-table button {
+    margin-left: 15px;
+}
+  
+#back-button:hover {
+    background-color: #ff5353; /* Màu nền khi rê chuột vào */
+}
+  
+#back-button:active {
+    background-color: #ff2e2e; /* Màu nền khi nút được nhấn */
+}
+/* Middle */
+/* phan sap xep */
+.middle{
+    width: 100%;
+    margin-top: 70px;
+}
+
+h2{
+    text-align: center;
+}
+
+/* phan thong tin sp */
+
+.product{
+    width: 100%;
+    height: auto;
+}
+
+.product li{
+    width: 20%;
+    height: auto;
+    list-style: none;
+    display: inline-block;
+    padding-left: 63px;
+    padding-top: 30px;
+    flex-basis: 50%;
+}
+
+.product-price {
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      color: white;
+    }
+    50% {
+      color: rgb(255, 0, 0);
+    }
+    100% {
+      color: white;
+    }
+  }
+
+.product-top img{
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+}
+
+.product-name { 
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.product-bottom a{
+    display: flex;
+    text-decoration: none;
+    line-height: 1.50;
+}
+
+.producer{
+    color: rgb(123, 123, 123);
+    text-transform: uppercase ;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+
+.them{
+    width: 50%;
+    height: 40px;
+    color: black;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+
+
+.Function button{
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+    margin-top: 15px;
+}
+
+
+.them:hover{
+    background-color: #fefb9d;
+}
+
+.chitiet:hover{
+    background-color: #91f6f3;
+}
+
+.chitiet{
+    width: 47%;
+    height: 40px;
+    color: black;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-weight: bolder;
+    
+}
+
+.them a{
+    color: #000000;
+    padding-left: 35px;
+}
+
+.chitiet a{
+    color: #000000;
+    padding-left: 20px;
+}
+
+
+.switch{
+    width: 95%;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    
+}
+.switch li{
+    list-style: none;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px  rgb(0, 0, 0);
+   
+}
+
+.form1 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px ;
+    
+    
+}
+.form2 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px ;
+   
+}
+.form3 a{
+    text-decoration: underline;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px ;
+}
+
+.form4 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px ;
+}
+
+.form5 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+  
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px ;
+}
+
+.form1:hover{
+    text-decoration: underline;
+}
+
+.form2:hover{
+    text-decoration: underline;
+}
+
+.form3:hover{
+    text-decoration: underline;
+}
+
+.form4:hover{
+    text-decoration: underline;
+}
+
+.form5:hover{
+    text-decoration: underline;
+}
+
+.img1 a img{
+    width: 20px ;
+    height: auto;
+    vertical-align: sub;
+    opacity: 0.6;
+    border: 3px;
+    border-radius: 3px;
+}
+
+.img2 a img{
+    width: 20px ;
+    height: auto;
+    vertical-align: sub;
+    opacity: 0.6;
+    border: 3px;
+    border-radius: 3px;
+}
+
+
+
+/* phần đường kẻ */
+.lines{
+    border-color: rgb(4, 4, 5);
+    border-width: 2px;
+    border-style: solid;
+    width: 94%;
+    height: 0px;
+    margin-left: 55px;
+    opacity: 0.5;
+}
+
+
+.footer{
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 2% 17.5%;
+  
+}
+
+.logo4{
+    width: 250px;
+    height: auto;
+}
+
+.infor > ul {
+    list-style: none;
+}
+
+.infor ul li a{
+    text-decoration: none;
+    color: #000000;
+    line-height: 2;
+}

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shop giay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- Phần first -->
+        <div class="top">
+            <li class="logo"><a href="home.html"><img src="https://giayxshop.vn/wp-content/uploads/2023/09/3xshop-light.png" alt=""></a></li>
+            <li class="list"><a href="home.html">HOME</a></li>
+            <li class="list"><a href="index1.html">NIKE</a></li>
+            
+            <li class="lists"><a href="">OTHER MANUFACTURERS <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="menulist">
+                    <li class="list1">
+                        <a href="home.html">Adidas</a>
+                    </li>
+                    <li class="list1">
+                        <a href="index1.html">Nike</a>
+                    </li>
+                    <li class="list1">
+                        <a href="index2.html">MLB</a>
+                    </li>
+                    <li class="list1">
+                        <a href="index3.html">Vans</a>
+                    </li>
+                    <li class="list1">
+                        <a href="index4.html">Converse</a>
+                    </li>
+                    
+                  </ul>
+            </li>
+            
+            <li class="list"><a href="contact.html">CONTACT</a></li>
+            <li>
+                <input type="search" placeholder="Search..." name="text" class="input">
+                <button>
+                <i class="fa-solid fa-magnifying-glass"></i>    
+                </button>
+            </li>  
+            <li class="cart"><a href="#"></i><i class="fa-solid fa-cart-shopping" id="cart-icon"></i></i></a></li>
+            <table id="cart-table">
+              <thead>
+                <tr>
+                  <th>Product's name</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                  <th></th> <!-- Thêm cột mới -->
+                </tr>
+              </thead>
+              <tbody></tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="2" id="total-price">Total price: 0đ</td>
+                  <td>
+                    <button id="pay-button">PAY</button>
+                  </td>
+                  <td>
+                    <button id="back-button">BACK</button>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+            
+            <li class="login"><a href="index.html"><i class="fa-solid fa-right-to-bracket"></i></i></a></li>
+            <li class="map"><a href="profile.html"><i class="fa-solid fa-user"></i></a></li>
+        </div>
+
+        <div class="middle">
+            <div class="middle1">
+            </div>
+            <h2 id="text1">ADIDAS</h2>
+            <!-- Thong tin san pham -->
+            <div class="product">
+              <li>
+                <product-item>
+                  <!--Trong này có 2 phầm: Gồm ảnh, nút mua ngay và thông tin sản phẩm-->
+                 <div class="product-thumb">
+                   <div class="product-top">
+                      <a href="" >
+                       <img src="https://giayxshop.vn/wp-content/uploads/2022/12/1-2-300x300.jpg" alt="">
+                      </a>
+                   </div>
+                   <div class="product-bottom">
+                    <a href="" class="product-name">Adidas Forum Low Full White</a>
+                    <a href="" class="producer">Created and manufactured by Adidas</a>
+                    <a href="" class="product-price">450.000₫</a> 
+                    
+                    <div class="Function">
+                      <button class="them"><a href="">Add To Cart</a></button>
+                      <button class="chitiet"><a href="">Product Details</a></button>
+                    </div>
+                   </div>
+                  </div>
+                </product-item>
+              </li>
+
+              <li>
+                <product-item>
+                  <!--Trong này có 2 phầm: Gồm ảnh, nút mua ngay và thông tin sản phẩm-->
+                 <div class="product-thumb">
+                   <div class="product-top">
+                      <a href="" >
+                       <img src="https://giayxshop.vn/wp-content/uploads/2022/12/z4765366257331_f8b30079663cbcf6a90f065fe25ca4dc-600x600.jpg" alt="">
+                      </a>
+                   </div>
+        
+                   <div class="product-bottom">
+                    <a href="" class="product-name"> Adidas Forum Low White Black</a>
+                    <a href="" class="producer">Created and manufactured by Adidas</a>
+                    <a href="" class="product-price">450.000₫</a> 
+                    
+                    <div class="Function">
+                      <button class="them"><a href="">Add To Cart</a></button>
+                      <button class="chitiet"><a href="">Product Details</a></button>
+                    </div>
+
+                   </div>
+
+                  </div>
+                 
+                </product-item>
+              </li>
+
+              <li>
+                <product-item>
+                  <!--Trong này có 2 phầm: Gồm ảnh, nút mua ngay và thông tin sản phẩm-->
+                 <div class="product-thumb">
+                   <div class="product-top">
+                      <a href="" >
+                       <img src="https://giayxshop.vn/wp-content/uploads/2022/12/2-12-300x300.jpg" alt="">
+                      </a>
+                   </div>
+        
+                   <div class="product-bottom">
+                    <a href="" class="product-name">Adidas Forum Low Green</a>
+                    <a href="" class="producer">Created and manufactured by Adidas</a>
+                    <a href="" class="product-price">450.000₫</a> 
+                    
+                    <div class="Function">
+                      <button class="them"><a href="">Add To Cart</a></button>
+                      <button class="chitiet"><a href="">Product Details</a></button>
+                    </div>
+
+                   </div>
+
+                  </div>
+                 
+                </product-item>
+              </li>
+
+              <li>
+                <product-item>
+                  <!--Trong này có 2 phầm: Gồm ảnh, nút mua ngay và thông tin sản phẩm-->
+                 <div class="product-thumb">
+                   <div class="product-top">
+                      <a href="" >
+                       <img src="https://giayxshop.vn/wp-content/uploads/2021/12/z4770527207578_a63978244683a71c4c5ccd5c099cfd00-300x300.jpg" alt="">
+                      </a>
+                   </div>
+        
+                   <div class="product-bottom">
+                    <a href="" class="product-name">Adidas Superstar White Black Stripes</a>
+                    <a href="" class="producer">Created and manufactured by Adidas</a>
+                    <a href="" class="product-price">450.000₫</a> 
+                    
+                    <div class="Function">
+                      <button class="them"><a href="">Add To Cart</a></button>
+                      <button class="chitiet"><a href="">Product Details</a></button>
+                    </div>
+
+                   </div>
+
+                  </div>
+                 
+                </product-item>
+              </li>
+
+              <li>
+                <product-item>
+                  <!--Trong này có 2 phầm: Gồm ảnh, nút mua ngay và thông tin sản phẩm-->
+                 <div class="product-thumb">
+                   <div class="product-top">
+                      <a href="" >
+                       <img src="https://giayxshop.vn/wp-content/uploads/2022/05/z4998970118224_170b12209086529c786fe48eaf8ee653-600x600.jpg" alt="">
+                      </a>
+                   </div>
+        
+                   <div class="product-bottom">
+                    <a href="" class="product-name">Adidas 8681 Gray Black Stripe SF</a>
+                    <a href="" class="producer">Created and manufactured by Adidas</a>
+                    <a href="" class="product-price">450.000₫</a> 
+                    
+                    <div class="Function">
+                      <button class="them"><a href="">Add To Cart</a></button>
+                      <button class="chitiet"><a href="">Product Details</a></button>
+                    </div>
+
+                   </div>
+
+                  </div>
+                 
+                </product-item>
+              </li>
+
+              <li>
+                <product-item>
+                  <!--Trong này có 2 phầm: Gồm ảnh, nút mua ngay và thông tin sản phẩm-->
+                 <div class="product-thumb">
+                   <div class="product-top">
+                      <a href="" >
+                       <img src="https://giayxshop.vn/wp-content/uploads/2022/12/2-1-1-300x300.jpg" alt="">
+                      </a>
+                   </div>
+        
+                   <div class="product-bottom">
+                    <a href="" class="product-name">Adidas 8681 Black White Stripes SF</a>
+                    <a href="" class="producer">Created and manufactured by Adidas</a>
+                    <a href="" class="product-price">450.000₫</a> 
+                    
+                    <div class="Function">
+                      <button class="them"><a href="">Add To Cart</a></button>
+                      <button class="chitiet"><a href="">Product Details</a></button>
+                    </div>
+
+                   </div>
+
+                  </div>
+                 
+                </product-item>
+              </li>
+
+              <li>
+                <product-item>
+                  <!--Trong này có 2 phầm: Gồm ảnh, nút mua ngay và thông tin sản phẩm-->
+                 <div class="product-thumb">
+                   <div class="product-top">
+                      <a href="" >
+                       <img src="https://giayxshop.vn/wp-content/uploads/2022/07/z4781966102096_9bdd6a806bf59a86876102502e7fc881-300x300.jpg" alt="">
+                      </a>
+                   </div>
+        
+                   <div class="product-bottom">
+                    <a href="" class="product-name">Adidas Stan Smith White</a>
+                    <a href="" class="producer">Created and manufactured by Adidas</a>
+                    <a href="" class="product-price">450.000₫</a> 
+                    
+                    <div class="Function">
+                      <button class="them"><a href="">Add To Cart</a></button>
+                      <button class="chitiet"><a href="">Product Details</a></button>
+                    </div>
+
+                   </div>
+
+                  </div>
+                 
+                </product-item>
+              </li>
+
+              <li>
+                <product-item>
+                  <!--Trong này có 2 phầm: Gồm ảnh, nút mua ngay và thông tin sản phẩm-->
+                 <div class="product-thumb">
+                   <div class="product-top">
+                      <a href="" >
+                       <img src="https://giayxshop.vn/wp-content/uploads/2022/08/z4998921388707_33973e4db7fdcf2014b23c8e5a2611af-600x600.jpg" alt="">
+                      </a>
+                   </div>
+        
+                   <div class="product-bottom">
+                    <a href="" class="product-name">Adidas 8681 Blue and White SF</a>
+                    <a href="" class="producer">Created and manufactured by Adidas</a>
+                    <a href="" class="product-price">450.000₫</a> 
+                    
+                    <div class="Function">
+                      <button class="them"><a href="">Add To Cart</a></button>
+                      <button class="chitiet"><a href="">Product Details</a></button>
+                    </div>
+
+                   </div>
+
+                  </div>
+                 
+                </product-item>
+              </li>
+
+
+
+            </div>
+
+            <ul class="switch">
+              <li class="img1"><a href=""><img src="https://cdn.icon-icons.com/icons2/1993/PNG/512/arrow_back_chevron_direction_left_navigation_right_icon_123223.png" alt=""></a></li>
+              <li class="form1"><a href="">1</a></li>
+              <li class="form2"><a href="index1.html">2</a></li>
+              <li class="form3"><a href="index2.html">3</a></li>
+              <li class="form4"><a href="index3.html">4</a></li>
+              <li class="form5"><a href="index4.html">5</a></li>
+              <li class="img2"><a href="index1.html"><img src="https://cdn.icon-icons.com/icons2/2098/PNG/512/chevron_right_icon_128918.png" alt=""></a></li>
+            </ul>
+        </div>
+          
+        
+        <div class="lines"></div> 
+        <!------------------------------------------------------------------------------------------------------------------------------------------->
+        <footer id="colophon" class="site-footer" role="contentinfo">
+          <div class="footer-widgets">
+            <div class="container">
+              <div class="row">
+                <div class="infor">
+                  <ul>
+                    <li><a href="home.html"><img class="logo4" src="2.jpg" alt=""></a></li>
+                    <li><strong>Hệ thống giày thể thao số 1 Hà Nội</strong></li>
+                    <li><span class="fa_head">Hotline:</span> <a href="tel:0868112198">0868112198</a></li>
+                    <li><span class="fa_head">Store 1:</span> 57 Quan Hoa, Cầu Giấy, HN</li>
+                    <li><span class="fa_head">Store 2:</span> 29 Trần Đại Nghĩa, Hai Bà Trưng, HN</li>
+                    <li>&nbsp;</li>
+                  </ul>
+                </div>
+                <div class="infor">
+                  <h4 class="widget-title">Hỗ trợ</h4>
+                  <ul>
+                    <li><a href="#">7 cách bảo quản giày thể thao tốt nhất</a></li>
+                    <li><a href="#">Giữ “phong độ” cho Sneaker trắng ra sao</a></li>
+                    <li><a href="#">9 kỹ thuật làm đẹp dành cho U30</a></li>
+                  </ul>
+                </div>
+                <div class="infor">
+                  <h4 class="widget-title">THÔNG TIN</h4>
+                  <ul>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Hướng dẫn đặt hàng</a></li>
+                    <li><a href="#">Chính sách đổi hàng</a></li>
+                    <li><a href="#">Bảo mật</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li><a href="contact.html">Hệ thống cửa hàng</a></li>  
+                  </ul>
+                </div>
+            </div>
+            </div>
+          </div>      
+        </footer>
+
+        <div class="lines"></div>
+        
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------------------------->
+
+      <script src="cart.js"></script>
+</body>
+</html>
